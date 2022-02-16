@@ -11,6 +11,18 @@ app.get("/", (req, res) => {
     res.render("home")
 })
 
+app.get("/docs/component/avatar", (req, res) => {
+    res.render("comp_avatar")
+})
+
+app.get("/docs/component/badge", (req, res) => {
+    res.render("comp_badge")
+})
+
+app.get("/docs/component/image", (req, res) => {
+    res.render("comp_image")
+})
+
 app.listen(3000, () => console.log("server on port 3000"))
 
 module.exports = app

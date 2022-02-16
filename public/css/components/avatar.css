@@ -1,0 +1,142 @@
+/* ----------Avatar Component---------- */
+
+/* ----------Border Radius For Circular Avatar---------- */
+
+.avatar-xs,
+.avatar-sm,
+.avatar-md,
+.avatar-lg,
+.avatar-xl {border-radius: var(--border-radius-full);}
+
+/* ----------Border Radius For Rounded Avatar---------- */
+
+.avatar-round-xs {border-radius: var(--border-radius-xs);}
+.avatar-round-sm {border-radius: var(--border-radius-sm);}
+.avatar-round-md {border-radius: var(--border-radius-md);}
+.avatar-round-lg {border-radius: var(--border-radius-lg);}
+.avatar-round-xl {border-radius: var(--border-radius-xl);}
+
+/* ----------Sizing For Avatar---------- */
+
+.avatar-xs,
+.avatar-round-xs {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.avatar-sm,
+.avatar-round-sm {
+    width: 3rem;
+    height: 3rem;
+}
+
+.avatar-md,
+.avatar-round-md {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.avatar-lg,
+.avatar-round-lg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.avatar-xl,
+.avatar-round-xl {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+/* ----------Styles For Avatar Icon---------- */
+
+.avatar-status {
+    position: relative;
+}
+
+.avatar-icon-xs,
+.avatar-icon-sm,
+.avatar-icon-md,
+.avatar-icon-lg,
+.avatar-icon-xl {
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+}
+
+/* ----------Sizing For Avatar Icon---------- */
+
+.avatar-icon-xs {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.avatar-icon-sm {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+.avatar-icon-md {
+    width: 1rem;
+    height: 1rem;
+}
+
+.avatar-icon-lg {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.avatar-icon-xl {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* ----------Positioning For Avatar Icon---------- */
+
+.avatar-round-xs + .avatar-icon-xs,
+.avatar-round-sm + .avatar-icon-sm, 
+.avatar-round-md + .avatar-icon-md, 
+.avatar-round-lg + .avatar-icon-lg, 
+.avatar-round-xl + .avatar-icon-xl {
+    top: calc(-100% / 15);
+    right: calc(-100% / 15);
+}
+
+.avatar-xs + .avatar-icon-xs,
+.avatar-sm + .avatar-icon-sm, 
+.avatar-md + .avatar-icon-md, 
+.avatar-lg + .avatar-icon-lg, 
+.avatar-xl + .avatar-icon-xl {
+    top: calc(100% / 50);
+    right: calc(100% / 50);
+}
+
+/* ----------Background Color Styles For Avatar Icon---------- */
+
+.avatar-icon-primary {
+    background-color: var(--clr-primary-full);
+}
+
+.avatar-icon-secondary {
+    background-color: var(--clr-secondary-full);
+}
+
+.avatar-icon-success {
+    background-color: var(--clr-success-full);
+}
+
+.avatar-icon-caution {
+    background-color: var(--clr-caution-full);
+}
+
+.avatar-icon-error {
+    background-color: var(--clr-error-full);
+}
+
+.avatar-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white-full);
+    background-color: var(--clr-primary-full);
+}
