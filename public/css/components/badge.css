@@ -9,12 +9,13 @@
 .badge-md,
 .badge-lg,
 .badge-xl {
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    margin: 0;
 }
 
 .badge-xs {

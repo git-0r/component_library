@@ -59,7 +59,7 @@
 .avatar-icon-md,
 .avatar-icon-lg,
 .avatar-icon-xl {
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
     border: 2px solid white;
     position: absolute;
 }

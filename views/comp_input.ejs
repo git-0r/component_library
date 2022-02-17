@@ -1,0 +1,96 @@
+<%- include("partials/head") %>
+    <h1 id="input">Input</h1>
+    <p>Form with input validation and error styles(CSS only).</p>
+    <div class="component__container">
+        <form class="form">
+            <label for="firstname">First name</label>
+            <input class="input" id="firstname" type="text" minlength="3" placeholder="First name" required>
+            <p class="input-error-msg text-sm">min length is 3</p>
+            <label for="lastname">Last name</label>
+            <input class="input" id="lastname" type="text" minlength="3" placeholder="Last name" required>
+            <p class="input-error-msg text-sm">min length is 3</p>
+            <label for="email">Email</label>
+            <input class="input" id="email" type="email" placeholder="something@gmail.com" required>
+            <p class="input-error-msg text-sm">enter email in 'email@gmail.com' format</p>
+            <label for="password">Password</label>
+            <input class="input" id="password" type="password" placeholder="p@$$\/\/Or|)"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <div class="input-error-msg text-sm">
+                <ul>password must include atleast:
+                    <li>one uppercase letter</li>
+                    <li>one lowercase letter</li>
+                    <li>one special character</li>
+                    <li>one number</li>
+                    <li>minimum length 8 characters</li>
+                </ul>
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <pre><code class="language-html">&lt;form class=&quot;form&quot;&gt;
+    &lt;label for=&quot;firstname&quot;&gt;First name&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;firstname&quot; type=&quot;text&quot; minlength=&quot;3&quot;
+    placeholder=&quot;First name&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;min length is 3&lt;/p&gt;
+    &lt;label for=&quot;lastname&quot;&gt;Last name&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;lastname&quot; type=&quot;text&quot; minlength=&quot;3&quot;
+    placeholder=&quot;Last name&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;min length is 3&lt;/p&gt;
+    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;email&quot; type=&quot;email&quot;
+    placeholder=&quot;something@gmail.com&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;
+    enter email in 'email@gmail.com' format&lt;/p&gt;
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;password&quot; 
+    type=&quot;password&quot; placeholder=&quot;p@$$\/\/Or|)&quot;
+    pattern=&quot;(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}&quot; required&gt;
+    &lt;div class=&quot;input-error-msg text-sm&quot;&gt;
+        &lt;ul&gt;password must include atleast:
+            &lt;li&gt;one uppercase letter&lt;/li&gt;
+            &lt;li&gt;one lowercase letter&lt;/li&gt;
+            &lt;li&gt;one special character&lt;/li&gt;
+            &lt;li&gt;one number&lt;/li&gt;
+            &lt;li&gt;minimum length 8 characters&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;remember&quot; id=&quot;remember&quot;&gt;
+        &lt;label for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;</code></pre>
+    <hr>
+    <h2 id="textarea">Textarea</h2>
+    <div class="component__container">
+        <form>
+            <textarea class="textarea" name="textarea" cols="30" rows="10"
+                placeholder="Firm and slightly denser than others." minlength="10" required></textarea>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <pre><code class="language-html">&lt;form&gt;
+    &lt;textarea class=&quot;textarea&quot; name=&quot;textarea&quot; cols=&quot;30&quot; rows=&quot;10&quot;
+    placeholder=&quot;Firm and slightly denser than others.&quot; 
+    minlength=&quot;10&quot; required&gt;
+    &lt;/textarea&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#input">Input</a></li>
+                <li class="menu__item"><a class="menu__link" href="#textarea">Textarea</a>
+                </li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <%- include("partials/foot") %>

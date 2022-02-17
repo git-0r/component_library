@@ -23,6 +23,18 @@ app.get("/docs/component/image", (req, res) => {
     res.render("comp_image")
 })
 
+app.get("/docs/component/alert", (req, res) => {
+    res.render("comp_alert")
+})
+
+app.get("/docs/component/button", (req, res) => {
+    res.render("comp_button")
+})
+
+app.get("/docs/component/input", (req, res) => {
+    res.render("comp_input")
+})
+
 app.listen(3000, () => console.log("server on port 3000"))
 
 module.exports = app

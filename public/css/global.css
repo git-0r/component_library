@@ -88,3 +88,7 @@
     box-sizing: border-box;
     font-family: var(--ff-sans-inter);
 }
+
+p {
+    margin: 0 0 1rem 0;
+}

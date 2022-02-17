@@ -5,5 +5,5 @@
 }
 
 .round-img {
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
 }

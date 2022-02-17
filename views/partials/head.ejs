@@ -35,7 +35,7 @@
         .docs__section {
             width: 60%;
             margin: 1.5rem 0 1rem 0;
-            border-radius: 0.25rem;
+            border-radius: var(--border-radius-sm);
             background-color: #FBFAF5;
             overflow: hidden;
         }
@@ -61,7 +61,7 @@
         .sidebar {
             width: 20%;
             padding: 1rem;
-            border-radius: 0.25rem;
+            border-radius: var(--border-radius-sm);
             background-color: #FBFAF5;
             position: sticky;
             top: calc(1rem + 60px);
@@ -81,11 +81,11 @@
             cursor: pointer;
         }
 
-        li {
+        .sidebar li {
             list-style-image: url(https://res.cloudinary.com/clouduser/image/upload/v1644944161/chevrons-right_domzra.svg);
         }
 
-        li:hover {
+        .sidebar li:hover {
             text-decoration: underline hsla(209, 75%, 50%);
         }
 
@@ -94,10 +94,11 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
+            gap: 1rem;
         }
 
         code {
-            border-radius: 0.25rem;
+            border-radius: var(--border-radius-sm);
         }
 
         code span {
@@ -178,6 +179,9 @@
                     <li class="menu__item"><a class="menu__link" href="/docs/component/avatar">Avatar</a></li>
                     <li class="menu__item"><a class="menu__link" href="/docs/component/badge">Badge</a></li>
                     <li class="menu__item"><a class="menu__link" href="/docs/component/image">Image</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/docs/component/alert">Alert</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/docs/component/button">Button</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/docs/component/input">Input</a></li>
                 </ul>
             </details>
         </nav>
