@@ -1,0 +1,304 @@
+<%- include("partials/head") %>
+    <h1 id="card">Card</h1>
+    <h2 id="card-with-badge">Card with badge</h2>
+    <p>
+        Badges with different background color can be achieved by using following classes :
+    <ul>
+        <li>card-badge-primary</li>
+        <li>card-badge-secondary</li>
+        <li>card-badge-success</li>
+        <li>card-badge-caution</li>
+        <li>card-badge-error</li>
+    </ul>
+    </p>
+    <div class="component__container">
+        <div class="card card-vertical">
+            <img class="card-img"
+                src="https://res.cloudinary.com/clouduser/image/upload/c_scale,w_200/v1641912008/ActionCore/ASUS-ProArt-Display-PA279CV-4K-HDR-UHD-3840-x-2160-Monitor-removebg-preview_jjhobu.png"
+                alt="">
+            <div class="card-data">
+                <p class="card-title text-sm">Acer ProArt Monitor</p>
+                <div class="product-rating text-xs d-flex flex-align-center">4.3
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="green"
+                        stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <span>| 2.5k</span>
+                </div>
+                <p>&#8377; 29999</p>
+                <button class="btn btn-primary">view</button>
+                <p class="card-whishlist text-xs d-flex flex-center">
+                    <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </p>
+            </div>
+            <p class="card-badge card-badge-top-right card-badge-success text-xs">Latest !</p>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;card card-vertical&quot;&gt;
+    &lt;img class=&quot;card-img&quot;
+    src=&quot;https://res.cloudinary.com/clouduser/image/upload/c_scale,w_200/v1641912008/ActionCore/ASUS-ProArt-Display-PA279CV-4K-HDR-UHD-3840-x-2160-Monitor-removebg-preview_jjhobu.png&quot;
+    alt=&quot;&quot;&gt;
+    &lt;div class=&quot;card-data&quot;&gt;
+    &lt;p class=&quot;card-title text-sm&quot;&gt;Acer ProArt Monitor&lt;/p&gt;
+    &lt;div class=&quot;product-rating text-xs d-flex flex-align-center&quot;&gt;4.3
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24
+    24&quot; fill=&quot;green&quot;
+    stroke=&quot;green&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;&gt;
+    &lt;polygon
+    points=&quot;12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2&quot;&gt;
+    &lt;/polygon&gt;
+    &lt;/svg&gt;
+    &lt;span&gt;| 2.5k&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p&gt;&amp;#8377; 29999&lt;/p&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;view&lt;/button&gt;
+    &lt;p class=&quot;card-whishlist text-xs d-flex flex-center&quot;&gt;
+    &lt;svg class=&quot;wishlist-svg&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot;
+    height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot;
+    fill=&quot;none&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot;
+    stroke-linejoin=&quot;round&quot;&gt;
+    &lt;path
+    d=&quot;M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
+    1.06-1.06a5.5 5.5 0 0 0 0-7.78z&quot;&gt;
+    &lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;card-badge card-badge-top-right card-badge-success text-xs&quot;&gt;Latest !&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    <hr>
+    <h2 id="card-with-dismiss">Card with dismiss</h2>
+    <p>Use following code snippet to add dismiss icon to card component.</p>
+    <div class="component__container">
+        <div class="card card-vertical">
+            <img class="card-img"
+                src="https://res.cloudinary.com/clouduser/image/upload/c_scale,w_200/v1641912008/ActionCore/ASUS-ProArt-Display-PA279CV-4K-HDR-UHD-3840-x-2160-Monitor-removebg-preview_jjhobu.png"
+                alt="">
+            <div class="card-data">
+                <p class="card-title text-sm">Acer ProArt Monitor</p>
+                <div class="product-rating text-xs d-flex flex-align-center">4.3
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="green"
+                        stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <span>| 2.5k</span>
+                </div>
+                <p>&#8377; 29999</p>
+                <button class="btn btn-primary">view</button>
+                <p class="card-whishlist text-xs d-flex flex-center">
+                    <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </p>
+            </div>
+            <div class="card-dismiss">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;card-dismiss&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;20&quot; height=&quot;20&quot; 
+    viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;#000000&quot;
+    stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
+    &lt;line x1=&quot;18&quot; y1=&quot;6&quot; x2=&quot;6&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+    &lt;line x1=&quot;6&quot; y1=&quot;6&quot; x2=&quot;18&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+    <hr>
+    <h2 id="card-with-text-overlay">Card with text overlay</h2>
+    <p>Use following code snippet to add text overlay to card component which covers the whole card.</p>
+    <div class="component__container">
+        <div class="card card-vertical">
+            <img class="card-img"
+                src="https://res.cloudinary.com/clouduser/image/upload/c_scale,w_200/v1641912008/ActionCore/ASUS-ProArt-Display-PA279CV-4K-HDR-UHD-3840-x-2160-Monitor-removebg-preview_jjhobu.png"
+                alt="">
+            <div class="card-data">
+                <p class="card-title text-sm">Acer ProArt Monitor</p>
+                <div class="product-rating text-xs d-flex flex-align-center">4.3
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="green"
+                        stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <span>| 2.5k</span>
+                </div>
+                <p>&#8377; 29999</p>
+                <button class="btn btn-primary">view</button>
+                <p class="card-whishlist text-xs d-flex flex-center">
+                    <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </p>
+            </div>
+            <div class="card-text-overlay d-flex flex-center">
+                <p>OUT OF STOCK</p>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;card-text-overlay d-flex flex-center&quot;&gt;
+    &lt;p&gt;OUT OF STOCK&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    <hr>
+    <h2 id="card-with-shadow">Card with shadow</h2>
+    <p>
+        Following three classes can be used to add shadow to a card:
+    <ul>
+        <li>card-shadow1</li>
+        <li>card-shadow2</li>
+        <li>card-shadow3</li>
+    </ul>
+    </p>
+    <p>
+        note: 1,2,3 denotes different depths of shadow.
+    </p>
+    <div class="component__container">
+        <div class="card card-vertical card-shadow3">
+            <img class="card-img"
+                src="https://res.cloudinary.com/clouduser/image/upload/c_scale,w_200/v1641912008/ActionCore/ASUS-ProArt-Display-PA279CV-4K-HDR-UHD-3840-x-2160-Monitor-removebg-preview_jjhobu.png"
+                alt="">
+            <div class="card-data">
+                <p class="card-title text-sm">Acer ProArt Monitor</p>
+                <div class="product-rating text-xs d-flex flex-align-center">4.3
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="green"
+                        stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <span>| 2.5k</span>
+                </div>
+                <p>&#8377; 29999</p>
+                <button class="btn btn-primary">view</button>
+                <p class="card-whishlist text-xs d-flex flex-center">
+                    <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </p>
+            </div>
+            <p class="card-badge card-badge-top-right card-badge-success text-xs">Latest !</p>
+        </div>
+    </div>
+    <hr>
+    <h2 id="text-only-card">Text only card</h2>
+    <p>
+        Following classes can be used to change text size as required:
+    <ul>
+        <li>text-xs</li>
+        <li>text-sm</li>
+        <li>text-md</li>
+        <li>text-lg</li>
+        <li>text-xl</li>
+    </ul>
+    </p>
+    <div class="component__container">
+        <div class="card card-text-only card-shadow3">
+            <div class="card-data">
+                <p class="card-title text-xl">The Great Gatsby</p>
+                <p class="text-sm">by F. Scott Fitzgerald</p>
+                <p>
+                    In my younger and more vulnerable years my father gave me some advice
+                    that I've been turning over in my mind ever since.
+
+                    “Whenever you feel like criticizing anyone,” he told me, “just
+                    remember that all the people in this world haven't had the advantages
+                    that you've had.”
+                </p>
+                <button class="btn btn-primary">read more</button>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;card card-text-only card-shadow3&quot;&gt;
+    &lt;div class=&quot;card-data&quot;&gt;
+        &lt;p class=&quot;card-title text-xl&quot;&gt;The Great Gatsby&lt;/p&gt;
+        &lt;p class=&quot;text-sm&quot;&gt;by F. Scott Fitzgerald&lt;/p&gt;
+        &lt;p&gt;
+            In my younger and more vulnerable years my father gave me some advice
+            that I've been turning over in my mind ever since.
+    
+            &ldquo;Whenever you feel like criticizing anyone,&rdquo; he told me, &ldquo;just
+            remember that all the people in this world haven't had the advantages
+            that you've had.&rdquo;
+        &lt;/p&gt;
+        &lt;button class=&quot;btn btn-primary&quot;&gt;read more&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <hr>
+    <h2 id="horizontal-card">Horizontal card</h2>
+    <p>At smaller width card-data will wrap below the image and horizontal card will become vertical.</p>
+    <div class="component__container">
+        <div class="card card-horizontal card-shadow3 d-flex">
+            <img class="card-horizontal-img" src="https://picsum.photos/250" alt="">
+            <div class="card-data">
+                <p class="card-title text-xl">The Great Gatsby</p>
+                <p class="text-sm">by F. Scott Fitzgerald</p>
+                <p>
+                    “Whenever you feel like criticizing anyone,” he told me, “just
+                    remember that all the people in this world haven't had the advantages
+                    that you've had.”
+                </p>
+                <button class="btn btn-primary">read more</button>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;card card-horizontal card-shadow3 d-flex&quot;&gt;
+    &lt;img class=&quot;card-horizontal-img&quot; src=&quot;https://picsum.photos/250&quot; alt=&quot;&quot;&gt;
+    &lt;div class=&quot;card-data&quot;&gt;
+        &lt;p class=&quot;card-title text-xl&quot;&gt;The Great Gatsby&lt;/p&gt;
+        &lt;p class=&quot;text-sm&quot;&gt;by F. Scott Fitzgerald&lt;/p&gt;
+        &lt;p&gt;
+            &ldquo;Whenever you feel like criticizing anyone,&rdquo; he told me, &ldquo;just
+            remember that all the people in this world haven't had the advantages
+            that you've had.&rdquo;
+        &lt;/p&gt;
+        &lt;button class=&quot;btn btn-primary&quot;&gt;read more&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#card-with-badge">Card with badge</a></li>
+                <li class="menu__item"><a class="menu__link" href="#card-with-dismiss">Card with dismiss</a></li>
+                <li class="menu__item"><a class="menu__link" href="#card-with-text-overlay">Card with text overlay</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#card-with-shadow">Card with shadow</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#text-only-card">Text only card</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#horizontal-card">Horizontal card</a>
+                </li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <%- include("partials/foot") %>

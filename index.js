@@ -35,6 +35,10 @@ app.get("/docs/component/input", (req, res) => {
     res.render("comp_input")
 })
 
+app.get("/docs/component/card", (req, res) => {
+    res.render("comp_card")
+})
+
 app.listen(3000, () => console.log("server on port 3000"))
 
 module.exports = app

@@ -82,6 +82,11 @@
     --border-radius-xl: 20px;
     --border-radius-full: 50%;
 
+    --z-index-one: 1;
+    --z-index-two: 2;
+    --z-index-three: 3;
+    --z-index-four: 4;
+    --z-index-five: 5;
 }
 
 * {
