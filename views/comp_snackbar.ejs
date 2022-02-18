@@ -1,0 +1,35 @@
+<%- include("partials/head") %>
+    <h1 id="snackbar">Snackbar</h1>
+    <div class="component__container">
+        <button class="btn btn-primary btn-show-snackbar">show snackbar</button>
+    </div>
+    <div class="snackbar flex-align-center flex-justify-between">
+        <p class="snackbar-content">snackbar this is !</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;snackbar flex-align-center flex-justify-between&quot;&gt;
+    &lt;p class=&quot;snackbar-content&quot;&gt;snackbar this is !&lt;/p&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; 
+        viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;#ffffff&quot;
+        stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
+        &lt;line x1=&quot;18&quot; y1=&quot;6&quot; x2=&quot;6&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+        &lt;line x1=&quot;6&quot; y1=&quot;6&quot; x2=&quot;18&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#snackbar">Snackbar</a></li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <script src="/js/snackbar.js"></script>
+    <%- include("partials/foot") %>

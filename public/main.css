@@ -2,6 +2,7 @@
 @import "./css/utils/flex.css";
 @import "./css/utils/typography.css";
 
+/* ----------component css files------------ */
 @import "./css/components/avatar.css";
 @import "./css/components/badge.css";
 @import "./css/components/image.css";
@@ -11,3 +12,7 @@
 @import "./css/components/card.css";
 @import "./css/components/list.css";
 @import "./css/components/navigation.css";
+@import "./css/components/modal.css";
+@import "./css/components/rating.css";
+@import "./css/components/snackbar.css";
+@import "./css/components/grid.css";

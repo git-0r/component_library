@@ -1,0 +1,35 @@
+<%- include("partials/head") %>
+    <h1 id="modal">Modal</h1>
+    <div class="component__container">
+        <button class="btn btn-primary btn-open-modal">Toggle modal</button>
+        <div class="modal-container flex-center">
+            <div class="modal-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus amet, adipisci sit placeat ipsam
+                    fugit quis ut ad illo omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
+                </p>
+                <button class="btn btn-primary btn-close-modal">close</button>
+            </div>
+        </div>
+    </div>
+    <pre><code class="language-html">&lt;div class=&quot;modal-container flex-center&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Ducimus amet, adipisci sit placeat ipsam fugit quis ut ad illo
+          omnis at libero reiciendis deleniti. Autem sequi asperiores culpa aperiam et.
+        &lt;/p&gt;
+        &lt;button class=&quot;btn btn-primary btn-close-modal&quot;&gt;close&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#modal">Modal</a></li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <script src="/js/modal.js"></script>
+    <%- include("partials/foot") %>

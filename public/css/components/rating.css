@@ -1,0 +1,33 @@
+.star-rating {
+    position: relative;
+    flex-direction: row-reverse;
+    width: 200px;
+}
+
+.star-rating input {
+   display: none;
+}
+
+.star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    color: var(--clr-secondary-full);
+}
+
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0;
+
+}
+
+/* -------change content of all sibling pseudo elements */
+
+.star-rating input:checked ~ label::before {
+    content: '\2605';
+}
+
+.star-rating input:hover ~ label::before {
+    content: '\2605';
+}

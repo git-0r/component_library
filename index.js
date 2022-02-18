@@ -51,6 +51,22 @@ app.get("/docs/component/navigation", (req, res) => {
     res.render("comp_navigation")
 })
 
+app.get("/docs/component/modal", (req, res) => {
+    res.render("comp_modal")
+})
+
+app.get("/docs/component/rating", (req, res) => {
+    res.render("comp_rating")
+})
+
+app.get("/docs/component/snackbar", (req, res) => {
+    res.render("comp_snackbar")
+})
+
+app.get("/docs/component/grid", (req, res) => {
+    res.render("comp_grid")
+})
+
 app.listen(3000, () => console.log("server on port 3000"))
 
 module.exports = app
