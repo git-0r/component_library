@@ -1,0 +1,153 @@
+<%- include("partials/head") %>
+    <h1 id="list">List</h1>
+    <p>Simple list without default browser style.</p>
+    <div class="component__container">
+        <ul class="styled-list">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+        </ul>
+    </div>
+    <pre><code class="language-html">&lt;ul class=&quot;styled-list&quot;&gt;
+    &lt;li&gt;List item 1&lt;/li&gt;
+    &lt;li&gt;List item 2&lt;/li&gt;
+    &lt;li&gt;List item 3&lt;/li&gt;
+    &lt;li&gt;List item 4&lt;/li&gt;
+    &lt;li&gt;List item 5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <p>Simple list with custom list style image.</p>
+    <div class="component__container">
+        <ul class="styled-list">
+            <li class="custom-list-style-image">List item 1</li>
+            <li class="custom-list-style-image">List item 2</li>
+            <li class="custom-list-style-image">List item 3</li>
+            <li class="custom-list-style-image">List item 4</li>
+            <li class="custom-list-style-image">List item 5</li>
+        </ul>
+    </div>
+    <pre><code class="language-html">&lt;ul class=&quot;styled-list&quot;&gt;
+    &lt;li class=&quot;custom-list-style-image&quot;&gt;List item 1&lt;/li&gt;
+    &lt;li class=&quot;custom-list-style-image&quot;&gt;List item 2&lt;/li&gt;
+    &lt;li class=&quot;custom-list-style-image&quot;&gt;List item 3&lt;/li&gt;
+    &lt;li class=&quot;custom-list-style-image&quot;&gt;List item 4&lt;/li&gt;
+    &lt;li class=&quot;custom-list-style-image&quot;&gt;List item 5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <hr>
+    <h2 id="list-with-checkbox-and-radio">List with checkbox & radio</h2>
+    <div class="component__container">
+        <ul class="styled-list">
+            <li>
+                <input type="checkbox" name="" id="checkbox-list-item1">
+                <label for="checkbox-list-item1">List item 1</label>
+            </li>
+            <li>
+                <input type="checkbox" name="" id="checkbox-list-item2">
+                <label for="checkbox-list-item2">List item 2</label>
+            </li>
+            <li>
+                <input type="checkbox" name="" id="checkbox-list-item3">
+                <label for="checkbox-list-item3">List item 3</label>
+            </li>
+        </ul>
+    </div>
+    <pre><code class="language-html">&lt;ul class=&quot;styled-list&quot;&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;checkbox-list-item1&quot;&gt;
+        &lt;label for=&quot;checkbox-list-item1&quot;&gt;List item 1&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;checkbox-list-item2&quot;&gt;
+        &lt;label for=&quot;checkbox-list-item2&quot;&gt;List item 2&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;checkbox-list-item3&quot;&gt;
+        &lt;label for=&quot;checkbox-list-item3&quot;&gt;List item 3&lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <div class="component__container">
+        <ul class="styled-list">
+            <li>
+                <input type="radio" name="radio-list" id="radio-list-item1">
+                <label for="radio-list-item1">List item 1</label>
+            </li>
+            <li>
+                <input type="radio" name="radio-list" id="radio-list-item2">
+                <label for="radio-list-item2">List item 2</label>
+            </li>
+            <li>
+                <input type="radio" name="radio-list" id="radio-list-item3">
+                <label for="radio-list-item3">List item 3</label>
+            </li>
+        </ul>
+    </div>
+    <pre><code class="language-html">&lt;ul class=&quot;styled-list&quot;&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio-list&quot; id=&quot;radio-list-item1&quot;&gt;
+        &lt;label for=&quot;radio-list-item1&quot;&gt;List item 1&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio-list&quot; id=&quot;radio-list-item2&quot;&gt;
+        &lt;label for=&quot;radio-list-item2&quot;&gt;List item 2&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;radio-list&quot; id=&quot;radio-list-item3&quot;&gt;
+        &lt;label for=&quot;radio-list-item3&quot;&gt;List item 3&lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <hr>
+    <h2 id="stacked-list">Stacked list</h2>
+    <div class="component__container">
+        <ul class="stacked-list">
+            <li class="stacked-list-item d-flex flex-align-center">
+                <p class="list-item-content">Stacked notification message</p>
+                <a class="btn btn-link" href="">view</a>
+            </li>
+            <li class="stacked-list-item d-flex flex-align-center">
+                <p class="list-item-content">Stacked notification message</p>
+                <a class="btn btn-link" href="">view</a>
+            </li>
+            <li class="stacked-list-item d-flex flex-align-center">
+                <p class="list-item-content">Stacked notification message</p>
+                <a class="btn btn-link" href="">view</a>
+            </li>
+            <li class="stacked-list-item d-flex flex-align-center">
+                <p class="list-item-content">Stacked notification message</p>
+                <a class="btn btn-link" href="">view</a>
+            </li>
+        </ul>
+    </div>
+    <pre><code class="language-html">&lt;ul class=&quot;stacked-list&quot;&gt;
+    &lt;li class=&quot;stacked-list-item d-flex flex-align-center&quot;&gt;
+        &lt;p class=&quot;list-item-content&quot;&gt;Stacked notification message&lt;/p&gt;
+        &lt;a class=&quot;btn btn-link&quot; href=&quot;&quot;&gt;view&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;stacked-list-item d-flex flex-align-center&quot;&gt;
+        &lt;p class=&quot;list-item-content&quot;&gt;Stacked notification message&lt;/p&gt;
+        &lt;a class=&quot;btn btn-link&quot; href=&quot;&quot;&gt;view&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;stacked-list-item d-flex flex-align-center&quot;&gt;
+        &lt;p class=&quot;list-item-content&quot;&gt;Stacked notification message&lt;/p&gt;
+        &lt;a class=&quot;btn btn-link&quot; href=&quot;&quot;&gt;view&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;stacked-list-item d-flex flex-align-center&quot;&gt;
+        &lt;p class=&quot;list-item-content&quot;&gt;Stacked notification message&lt;/p&gt;
+        &lt;a class=&quot;btn btn-link&quot; href=&quot;&quot;&gt;view&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#list">List</a></li>
+                <li class="menu__item"><a class="menu__link" href="#list-with-checkbox-and-radio">List with checkbox &
+                        radio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#stacked-list">Stacked list</a></li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <%- include("partials/foot") %>

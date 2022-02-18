@@ -39,6 +39,18 @@ app.get("/docs/component/card", (req, res) => {
     res.render("comp_card")
 })
 
+app.get("/docs/component/text", (req, res) => {
+    res.render("comp_text")
+})
+
+app.get("/docs/component/list", (req, res) => {
+    res.render("comp_list")
+})
+
+app.get("/docs/component/navigation", (req, res) => {
+    res.render("comp_navigation")
+})
+
 app.listen(3000, () => console.log("server on port 3000"))
 
 module.exports = app

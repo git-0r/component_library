@@ -1,0 +1,76 @@
+<%- include("partials/head") %>
+    <h1 id="text">Text</h1>
+    <h2 id="heading">Heading</h2>
+    <div>
+        <p class="heading-xl">Extra large heading</p>
+        <p class="heading-lg">Large heading</p>
+        <p class="heading-md">Medium heading</p>
+        <p class="heading-sm">Small heading</p>
+        <p class="heading-xs">Extra small heading</p>
+    </div>
+    <pre><code class="language-html">&lt;p class=&quot;heading-xl&quot;&gt;Extra large heading&lt;/p&gt;
+&lt;p class=&quot;heading-lg&quot;&gt;Large heading&lt;/p&gt;
+&lt;p class=&quot;heading-md&quot;&gt;Medium heading&lt;/p&gt;
+&lt;p class=&quot;heading-sm&quot;&gt;Small heading&lt;/p&gt;
+&lt;p class=&quot;heading-xs&quot;&gt;Extra small heading&lt;/p&gt;</code></pre>
+    <hr>
+    <h2 id="text-size">Text size</h2>
+    <div>
+        <p class="text-xl">Extra large text</p>
+        <p class="text-lg">Large text</p>
+        <p class="text-md">Medium text</p>
+        <p class="text-sm">Small text</p>
+        <p class="text-xs">Extra small text</p>
+    </div>
+    <pre><code class="language-html">&lt;p class=&quot;text-xl&quot;&gt;Extra large text&lt;/p&gt;
+&lt;p class=&quot;text-lg&quot;&gt;Large text&lt;/p&gt;
+&lt;p class=&quot;text-md&quot;&gt;Medium text&lt;/p&gt;
+&lt;p class=&quot;text-sm&quot;&gt;Small text&lt;/p&gt;
+&lt;p class=&quot;text-xs&quot;&gt;Extra small text&lt;/p&gt;</code></pre>
+    <hr>
+    <h2 id="gray-text">Gray text</h2>
+    <div>
+        <p class="heading-xl text-clr-gray">Heading</p>
+        <p class="text-clr-gray">
+            In my younger and more vulnerable years my father gave me some advice
+            that I've been turning over in my mind ever since.
+
+            “Whenever you feel like criticizing anyone,” he told me, “just
+            remember that all the people in this world haven't had the advantages
+            that you've had.”
+        </p>
+    </div>
+    <pre><code class="language-html">&lt;p class=&quot;heading-xl text-clr-gray&quot;&gt;Heading&lt;/p&gt;
+&lt;p class=&quot;text-clr-gray&quot;&gt;
+    In my younger and more vulnerable years my father gave me some advice
+    that I've been turning over in my mind ever since.
+    &ldquo;Whenever you feel like criticizing anyone,&rdquo; he told me, &ldquo;just
+    remember that all the people in this world haven't had the advantages
+    that you've had.&rdquo;
+&lt;/p&gt;</code></pre>
+    <hr>
+    <h2 id="text-alignment">Text alignment</h2>
+    <div>
+        <p class="text-align-left">Left aligned text</p>
+        <p class="text-align-center">Center aligned text</p>
+        <p class="text-align-right">Right aligned text</p>
+    </div>
+    <pre><code class="language-html">&lt;p class=&quot;text-align-left&quot;&gt;Left aligned text&lt;/p&gt;
+&lt;p class=&quot;text-align-center&quot;&gt;Center aligned text&lt;/p&gt;
+&lt;p class=&quot;text-align-right&quot;&gt;Right aligned text&lt;/p&gt;</code></pre>
+    </article>
+    </section>
+    <nav class="sidebar sidebar__two">
+        <details open>
+            <summary>on this page</summary>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="#text">Text</a></li>
+                <li class="menu__item"><a class="menu__link" href="#heading">Heading</a></li>
+                <li class="menu__item"><a class="menu__link" href="#text-size">Text size</a></li>
+                <li class="menu__item"><a class="menu__link" href="#gray-text">Gray text</a></li>
+                <li class="menu__item"><a class="menu__link" href="#text-alignment">Text alignment</a></li>
+            </ul>
+        </details>
+    </nav>
+    </main>
+    <%- include("partials/foot") %>
