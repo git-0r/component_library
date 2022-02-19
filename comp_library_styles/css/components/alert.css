@@ -1,0 +1,30 @@
+.alert {
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    padding: 1rem;
+    color: var(--clr-white-full);
+}
+
+.alert-info {
+    background-color: var(--clr-primary-full);
+}
+
+.alert-success {
+    background-color: var(--clr-success-full);
+}
+
+.alert-caution {
+    background-color: var(--clr-caution-full);
+}
+
+.alert-error {
+    background-color: var(--clr-error-full);
+}
+
+.alert-icon {
+    margin-right: 0.5rem;
+}
+
+.alert-msg {
+    margin: 0;
+}

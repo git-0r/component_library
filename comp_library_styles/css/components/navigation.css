@@ -1,0 +1,17 @@
+.top-navigation-component {
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--clr-caution-disabled);
+}
+
+.top-navigation-component .left {
+    flex: 1;
+}
+
+.top-navigation-component .center {
+    flex: 4;
+}
+
+.top-navigation-component .right {
+    flex: 2;
+}
