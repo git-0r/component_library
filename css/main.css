@@ -1,18 +1,18 @@
-@import "./css/global.css";
-@import "./css/utils/flex.css";
-@import "./css/utils/typography.css";
+@import "./component_library_styles/global.css";
+@import "./component_library_styles/utils/flex.css";
+@import "./component_library_styles/utils/typography.css";
 
 /* ----------component css files------------ */
-@import "./css/components/avatar.css";
-@import "./css/components/badge.css";
-@import "./css/components/image.css";
-@import "./css/components/alert.css";
-@import "./css/components/button.css";
-@import "./css/components/input.css";
-@import "./css/components/card.css";
-@import "./css/components/list.css";
-@import "./css/components/navigation.css";
-@import "./css/components/modal.css";
-@import "./css/components/rating.css";
-@import "./css/components/snackbar.css";
-@import "./css/components/grid.css";
+@import "./component_library_styles/components/avatar.css";
+@import "./component_library_styles/components/badge.css";
+@import "./component_library_styles/components/image.css";
+@import "./component_library_styles/components/alert.css";
+@import "./component_library_styles/components/button.css";
+@import "./component_library_styles/components/input.css";
+@import "./component_library_styles/components/card.css";
+@import "./component_library_styles/components/list.css";
+@import "./component_library_styles/components/navigation.css";
+@import "./component_library_styles/components/modal.css";
+@import "./component_library_styles/components/rating.css";
+@import "./component_library_styles/components/snackbar.css";
+@import "./component_library_styles/components/grid.css";
