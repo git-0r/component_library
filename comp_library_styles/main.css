@@ -1,0 +1,7 @@
+@import "./css/global.css";
+@import "./css/utils/flex.css";
+@import "./css/utils/typography.css";
+
+@import "./css/components/avatar.css";
+@import "./css/components/badge.css";
+@import "./css/components/image.css";

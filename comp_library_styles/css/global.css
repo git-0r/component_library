@@ -1,0 +1,90 @@
+:root {
+
+    /* --------------------TYPE SYSTEM------------------ */
+
+    /* --------------------FONT FAMILY------------------ */
+
+    --ff-sans-inter: 'Inter', sans-serif;
+
+    /* --------------------FONT WEIGHT------------------ */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* --------------------COLORS------------------ */
+
+    --clr-white-full: hsl(0, 0%, 100%);
+    --clr-white-mid: hsla(0, 0%, 100%, 52%);
+    --clr-white-disabled: hsla(0, 0%, 100%, 32%);
+    --clr-white-outline: hsla(0, 0%, 100%, 12%);
+
+    --clr-black-full: hsl(0, 0%, 13%);
+    --clr-black-mid: hsla(0, 0%, 13%, 52%);
+    --clr-black-disabled: hsla(0, 0%, 13%, 32%);
+    --clr-black-outline: hsla(0, 0%, 13%, 12%);
+    --clr-black-hover: hsla(0, 0%, 13%, 4%);
+
+    --clr-primary-full: hsl(209, 75%, 50%);
+    --clr-primary-mid: hsla(209, 75%, 50%, 52%);
+    --clr-primary-disabled: hsla(209, 75%, 50%, 32%);
+    --clr-primary-outline: hsla(209, 75%, 50%, 12%);
+    --clr-primary-hover: hsla(209, 75%, 50%, 4%);
+
+    --clr-secondary-full: hsl(29, 87%, 49%);
+    --clr-secondary-mid: hsl(29, 87%, 49%, 52%);
+    --clr-secondary-disabled: hsl(29, 87%, 32%);
+    --clr-secondary-outline: hsl(29, 87%, 49%, 12%);
+    --clr-secondary-hover: hsl(29, 87%, 49%, 4%);
+
+    --clr-caution-full: hsl(40, 82%, 56%);
+    --clr-caution-mid: hsl(40, 82%, 56%, 52%);
+    --clr-caution-disabled: hsl(40, 82%, 56%, 32%);
+    --clr-caution-outline: hsl(40, 82%, 56%, 12%);
+    --clr-caution-hover: hsl(40, 82%, 56%, 4%);
+    --clr-caution-gradient: linear-gradient(#ffee79,#e4c41a);
+
+    --clr-success-full: hsl(159, 100%, 38%);
+    --clr-success-mid: hsl(159, 100%, 38%, 52%);
+    --clr-success-disabled: hsl(159, 100%, 38%, 32%);
+    --clr-success-outline: hsl(159, 100%, 38%, 12%);
+    --clr-success-hover: hsl(159, 100%, 38%, 4%);
+    --clr-success-gradient: linear-gradient(#6af6a2,#17a76a);
+
+    --clr-error-full: hsl(2, 81%, 49%);
+    --clr-error-mid: hsl(2, 81%, 49%, 52%);
+    --clr-error-disabled: hsl(2, 81%, 49%, 32%);
+    --clr-error-outline: hsl(2, 81%, 49%, 12%);
+    --clr-error-hover: hsl(2, 81%, 49%, 4%);
+    --clr-error-gradient: linear-gradient(#f96f6f,#b13418);
+
+    --clr-rating-1: #ee7874;
+    --clr-rating-2: #f2ae6f;
+    --clr-rating-3: #f3ce85;
+    --clr-rating-4: #6feba1;
+    --clr-rating-5: #66dab0;
+
+    --clr-opaque-black-full: #4d4d4d;
+    --clr-opaque-black-mid: #909090;
+    --clr-opaque-black-disabled: #bcbcbc;
+    --clr-opaque-black-outline: #e4e4e4;
+    --clr-opaque-green-outline: #EBFAF5;
+    --clr-opaque-red-outline: #fce4e3;
+    --clr-opaque-blue-outline: #E4F0FB;
+    --clr-opaque-error-outline: #FDF8EF;
+
+    --border-radius-xs: 2px;
+    --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 15px;
+    --border-radius-xl: 20px;
+    --border-radius-full: 50%;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--ff-sans-inter);
+}
