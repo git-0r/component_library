@@ -4,10 +4,12 @@ const modalOpenBtn = document.querySelector(".btn-open-modal")
 const modalContainer = document.querySelector(".modal-container")
 const modalCloseBtn = document.querySelector(".btn-close-modal")
 
-modalOpenBtn.addEventListener("click", () => {
-    modalContainer.classList.toggle("modal-visible")
-})
+if (modalOpenBtn) {
 
-modalCloseBtn.addEventListener("click", () => {
-    modalContainer.classList.toggle("modal-visible")
-})
+    modalOpenBtn.addEventListener("click", () => {
+        modalContainer.classList.toggle("modal-visible")
+    })
+    modalCloseBtn.addEventListener("click", () => {
+        modalContainer.classList.toggle("modal-visible")
+    })
+}
