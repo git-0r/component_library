@@ -1,0 +1,42 @@
+/* ----------Flex Utility Classes--------- */
+
+.d-flex {
+    display: flex;
+}
+
+/* --------Justify Content Property--------- */
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
+.flex-justify-around {
+    justify-content: space-around;
+}
+
+/* --------Align Item Property--------- */
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
