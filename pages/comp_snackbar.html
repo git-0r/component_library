@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="../comp_library_styles/main.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="top__navbar">
+        <a href="/">Home</a>
+        <div>
+            <a href="https://github.com/git-0r/component_library" target="blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <main class="main__container">
+        <nav class="sidebar sidebar__one">
+            <details open>
+                <summary>components</summary>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__link" href="./comp_avatar.html">Avatar</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_badge.html">Badge</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_image.html">Image</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_alert.html">Alert</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_button.html">Button</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_input.html">Input</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_card.html">Card</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_text.html">Text</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_list.html">List</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_navigation.html">navigation</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_modal.html">modal</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_rating.html">rating</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_snackbar.html">snackbar</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_grid.html">grid</a></li>
+                </ul>
+            </details>
+        </nav>
+        <section class="docs__section box-shadow">
+            <article class="docs__content">
+                <h1 id="snackbar">Snackbar</h1>
+                <div class="component__container">
+                    <button class="btn btn-primary btn-show-snackbar">show snackbar</button>
+                </div>
+                <div class="snackbar flex-align-center flex-justify-between">
+                    <p class="snackbar-content">snackbar this is !</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;snackbar flex-align-center flex-justify-between&quot;&gt;
+    &lt;p class=&quot;snackbar-content&quot;&gt;snackbar this is !&lt;/p&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; 
+        viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;#ffffff&quot;
+        stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
+        &lt;line x1=&quot;18&quot; y1=&quot;6&quot; x2=&quot;6&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+        &lt;line x1=&quot;6&quot; y1=&quot;6&quot; x2=&quot;18&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+            </article>
+        </section>
+        <nav class="sidebar sidebar__two">
+            <details open>
+                <summary>on this page</summary>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__link" href="#snackbar">Snackbar</a></li>
+                </ul>
+            </details>
+        </nav>
+    </main>
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/atom-one-dark-reasonable.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="module" src="../index.js"></script>
+</body>
+
+</html>

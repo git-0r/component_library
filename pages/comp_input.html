@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="../comp_library_styles/main.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="top__navbar">
+        <a href="/">Home</a>
+        <div>
+            <a href="https://github.com/git-0r" target="blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <main class="main__container">
+        <nav class="sidebar sidebar__one">
+            <details open>
+                <summary>components</summary>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__link" href="./comp_avatar.html">Avatar</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_badge.html">Badge</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_image.html">Image</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_alert.html">Alert</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_button.html">Button</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./comp_input.html">Input</a></li>
+                </ul>
+            </details>
+        </nav>
+        <section class="docs__section box-shadow">
+            <article class="docs__content">
+
+                <h1 id="input">Input</h1>
+                <p>Form with input validation and error styles(CSS only).</p>
+                <div class="component__container">
+                    <form class="form">
+                        <label for="firstname">First name</label>
+                        <input class="input" id="firstname" type="text" minlength="3" placeholder="First name" required>
+                        <p class="input-error-msg text-sm">min length is 3</p>
+                        <label for="lastname">Last name</label>
+                        <input class="input" id="lastname" type="text" minlength="3" placeholder="Last name" required>
+                        <p class="input-error-msg text-sm">min length is 3</p>
+                        <label for="email">Email</label>
+                        <input class="input" id="email" type="email" placeholder="something@gmail.com" required>
+                        <p class="input-error-msg text-sm">enter email in 'email@gmail.com' format</p>
+                        <label for="password">Password</label>
+                        <input class="input" id="password" type="password" placeholder="p@$$\/\/Or|)"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <div class="input-error-msg text-sm">
+                            <ul>password must include atleast:
+                                <li>one uppercase letter</li>
+                                <li>one lowercase letter</li>
+                                <li>one special character</li>
+                                <li>one number</li>
+                                <li>minimum length 8 characters</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <pre><code class="language-html">&lt;form class=&quot;form&quot;&gt;
+    &lt;label for=&quot;firstname&quot;&gt;First name&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;firstname&quot; type=&quot;text&quot; minlength=&quot;3&quot;
+    placeholder=&quot;First name&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;min length is 3&lt;/p&gt;
+    &lt;label for=&quot;lastname&quot;&gt;Last name&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;lastname&quot; type=&quot;text&quot; minlength=&quot;3&quot;
+    placeholder=&quot;Last name&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;min length is 3&lt;/p&gt;
+    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;email&quot; type=&quot;email&quot;
+    placeholder=&quot;something@gmail.com&quot; required&gt;
+    &lt;p class=&quot;input-error-msg text-sm&quot;&gt;
+    enter email in 'email@gmail.com' format&lt;/p&gt;
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input class=&quot;input&quot; id=&quot;password&quot; 
+    type=&quot;password&quot; placeholder=&quot;p@$$\/\/Or|)&quot;
+    pattern=&quot;(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}&quot; required&gt;
+    &lt;div class=&quot;input-error-msg text-sm&quot;&gt;
+        &lt;ul&gt;password must include atleast:
+            &lt;li&gt;one uppercase letter&lt;/li&gt;
+            &lt;li&gt;one lowercase letter&lt;/li&gt;
+            &lt;li&gt;one special character&lt;/li&gt;
+            &lt;li&gt;one number&lt;/li&gt;
+            &lt;li&gt;minimum length 8 characters&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;remember&quot; id=&quot;remember&quot;&gt;
+        &lt;label for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;</code></pre>
+                <hr>
+                <h2 id="textarea">Textarea</h2>
+                <div class="component__container">
+                    <form>
+                        <textarea class="textarea" name="textarea" cols="30" rows="10"
+                            placeholder="Firm and slightly denser than others." minlength="10" required></textarea>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <pre><code class="language-html">&lt;form&gt;
+    &lt;textarea class=&quot;textarea&quot; name=&quot;textarea&quot; cols=&quot;30&quot; rows=&quot;10&quot;
+    placeholder=&quot;Firm and slightly denser than others.&quot; 
+    minlength=&quot;10&quot; required&gt;
+    &lt;/textarea&gt;
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </article>
+        </section>
+        <nav class="sidebar sidebar__two">
+            <details open>
+                <summary>on this page</summary>
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__link" href="#input">Input</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#textarea">Textarea</a>
+                    </li>
+                </ul>
+            </details>
+        </nav>
+    </main>
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/atom-one-dark-reasonable.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
