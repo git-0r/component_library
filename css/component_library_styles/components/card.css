@@ -1,0 +1,184 @@
+/* -------Styles for card component */
+
+.card {
+    border: 1px solid var(--clr-black-outline);
+    border-radius: var(--border-radius-md);
+    position: relative;
+}
+
+.card-vertical {
+    max-width: 200px;
+    width: 100%;
+}
+
+/* -------Styles for card data - price, rating, title etc. */
+
+.card-data {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    position: relative;
+}
+
+.card-data > * + * {
+    margin-bottom: 0.5rem;
+}
+
+.card-img {
+    border-radius:  0.6rem 0.6rem 0 0;
+    display: block;
+}
+
+.card-vertical .btn {
+    width: 100%;
+}
+
+.card-title {
+    font-weight: var(--fw-medium);
+}
+
+
+
+/* --------styles for card badges, dismiss btn-------- */
+
+.card-badge,
+.card-dismiss {
+    position: absolute;
+    z-index: var(--z-index-three);
+    cursor: pointer;
+    max-width: 60%;
+}
+
+.card-dismiss {
+    right: -1px;
+    top: -1px;
+    padding: 0 0.5rem;
+    border-radius: 0 0.6rem 0 0.6rem;
+    background-color: var(--clr-black-disabled);
+}
+
+.card-badge {
+    top: -1px;
+    padding: 0.2rem 0.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-white-full);
+}
+
+.card-badge-top-right {
+    right: -1px;
+    border-radius: 0 0.6rem 0 0.6rem;
+}
+
+.card-badge-top-left {
+    left: -1px;
+    border-radius: 0.6rem 0rem 0.6rem 0;
+}
+
+/* --------Badges with different background colors */
+
+.card-badge-primary {background-color: var(--clr-primary-full);}
+
+.card-badge-secondary {background-color: var(--clr-secondary-full);}
+
+.card-badge-success {background-color: var(--clr-success-full);}
+
+.card-badge-caution {background-color: var(--clr-caution-full);}
+
+.card-badge-error {background-color: var(--clr-error-full);}
+
+/* -------styles for wishlist icon---------- */
+
+.card-whishlist {
+    position: absolute;
+    height: 2rem;
+    top: -2.5rem;
+    right: 0;
+    padding: 0.5rem;
+    font-weight: var(--fw-medium);
+    border-radius: var(--border-radius-full);
+    border: 1px solid var(--clr-black-outline);
+    cursor: pointer;
+}
+
+.wishlist-svg:hover {
+    stroke: var(--clr-primary-full);
+    fill: var(--clr-primary-full);
+}
+
+/* --------styles for product rating on card-------- */
+.product-rating {
+    width: fit-content;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius-xs);
+    background-color: var(--clr-primary-outline);
+}
+
+/* -------styles for card with text overlay-------- */
+
+.card-text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-index-two);
+    font-weight: var(--fw-medium);
+    border-radius: var(--border-radius-xs);
+    background-color: var(--clr-white-mid);
+}
+
+/* --------styles for card shadow------- */
+.card-shadow1 {
+    box-shadow: 
+    0px 16px 24px rgba(0,0,0,0.06),
+    0px 6px 30px rgba(0,0,0,0.04),
+    0px 8px 10px rgba(0,0,0,0.08);
+}
+
+.card-shadow2 {
+    box-shadow: 
+    0px 12px 17px rgba(0, 0, 0, 0.06),
+    0px 5px 22px rgba(0, 0, 0, 0.04),
+    0px 7px 8px rgb(0, 0, 0, 0.08);
+}
+
+.card-shadow3 {
+    box-shadow: 
+    0px 24px 38px rgba(0, 0, 0, 0.06),
+    0px 9px 46px rgba(0, 0, 0, 0.04),
+    0px 11px 15px rgb(0, 0, 0, 0.08);
+}
+
+/* -------styles for text only card--------- */
+.card-text-only {
+    max-width: 400px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.card-text-only .card-title {
+    font-weight: var(--fw-medium);
+}
+
+/* -------styles for horizontal card-------- */
+.card-horizontal {
+    width: 100%;
+}
+
+.card-horizontal .card-data {
+    margin: 1rem;
+}
+
+.card-horizontal-img {
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+@media (max-width: 768px) {
+    .card-horizontal-img {
+        width: 100%;
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+    .card-horizontal {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,21 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: var(--z-index-four);
+    background-color: var(--clr-black-mid);
+}
+
+.modal-content {
+    max-width: 400px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--clr-white-full);
+}
+
+.modal-visible {
+    display: flex;
+}

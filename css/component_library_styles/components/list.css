@@ -1,0 +1,36 @@
+.styled-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+/* ---------apply margin on all list items-------- */
+
+.styled-list > * {
+    margin: 0.5rem;
+}
+
+.stacked-list {
+    list-style: none;
+    width: fit-content;
+    max-width: 400px;
+    padding: 0;
+    border: 1px solid var(--clr-black-outline);
+    border-radius: var(--border-radius-sm);
+}
+
+.stacked-list-item {
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--clr-black-outline);
+}
+
+.stacked-list-item .list-item-content {
+    margin: 0 1rem 0 0;
+}
+
+.stacked-list .stacked-list-item:last-of-type {
+    border-bottom: none;
+}
+
+.custom-list-style-image {
+    list-style-image: url(https://res.cloudinary.com/clouduser/image/upload/v1644944161/chevrons-right_domzra.svg);
+}
